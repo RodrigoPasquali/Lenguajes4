@@ -68,6 +68,7 @@ class GildedRose {
         }
     }
     
+    /*
     private int degrarCalidad(Item item){
     	return null;
     }
@@ -76,7 +77,7 @@ class GildedRose {
     	int itemActualizado = item.quality--;
     	return itemActualizado;
     }    
-    
+    */
     
     
 }
