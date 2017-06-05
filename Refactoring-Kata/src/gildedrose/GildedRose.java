@@ -20,9 +20,12 @@ class GildedRose {
                 }
             //Si nombrItem = AgedBrie o Backstage passes to a TAFKAL80ETC concert
             } else {
+            	//Entra cuando es AgedBrie
+            	
             	if (items[i].quality < 50) {
             		//Suma 1 a calidad si es <50
-            		items[i].quality = items[i].quality + 1;
+            		//items[i].quality = items[i].quality + 1;
+            		actualizarAgedBrie(items[i]);
 
             		//Si el nombr es Backstage passes to a TAFKAL80ETC concert
                     if (items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
@@ -68,16 +71,21 @@ class GildedRose {
         }
     }
     
-    /*
-    private int degrarCalidad(Item item){
-    	return null;
-    }
 
-    private int degradarCalidadPorActualizacio(Item item){
+    private int degradarCalidadPorActualizacion(Item item){
     	int itemActualizado = item.quality--;
     	return itemActualizado;
-    }    
-    */
+    }
+    
+    private void actualizarAgedBrie (Item item){
+    	item.quality ++;
+    }
+    
+    private void actualizacionGeneralItem (Item item){
+    	item.quality --;
+    }
+    
+    
     
     
 }
